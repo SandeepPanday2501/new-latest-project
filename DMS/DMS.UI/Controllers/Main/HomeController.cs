@@ -103,5 +103,11 @@ namespace DMS.Controllers
 
             return View();
         }
+        public ActionResult contactus(contact cont)
+        {
+            db.contacts.Add(cont);
+            db.SaveChanges();
+            return RedirectToAction("Contact", "Home");
+        }
     }
 }

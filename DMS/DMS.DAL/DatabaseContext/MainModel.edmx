@@ -38,6 +38,16 @@
           <Property Name="cfg01updated_name" Type="varchar" MaxLength="255" Nullable="false" />
           <Property Name="cfg01updated_date" Type="datetime" Nullable="false" />
         </EntityType>
+        <EntityType Name="contact">
+          <Key>
+            <PropertyRef Name="contactId" />
+          </Key>
+          <Property Name="contactId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="90" Nullable="false" />
+          <Property Name="mobile" Type="int" Nullable="false" />
+          <Property Name="subject" Type="varchar" MaxLength="1000" Nullable="false" />
+        </EntityType>
         <EntityType Name="dep01department">
           <Key>
             <PropertyRef Name="dep01uin" />
@@ -226,6 +236,7 @@
         <EntityContainer Name="BIT4thSemModelStoreContainer">
           <EntitySet Name="bra01branches" EntityType="Self.bra01branches" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="cfg01configurations" EntityType="Self.cfg01configurations" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="contact" EntityType="Self.contact" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="dep01department" EntityType="Self.dep01department" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="des01designations" EntityType="Self.des01designations" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="emp01employee" EntityType="Self.emp01employee" Schema="dbo" store:Type="Tables" />
@@ -296,6 +307,7 @@
             <End Role="usr05users" EntitySet="usr05users" />
           </AssociationSet>
           <EntitySet Name="user_SignUp" EntityType="BIT4thSemModel.user_SignUp" />
+          <EntitySet Name="contacts" EntityType="BIT4thSemModel.contact" />
         </EntityContainer>
         <EntityType Name="bra01branches">
           <Key>
@@ -527,6 +539,16 @@
           <Property Name="password" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
           <Property Name="confirmpassword" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
         </EntityType>
+        <EntityType Name="contact">
+          <Key>
+            <PropertyRef Name="contactId" />
+          </Key>
+          <Property Name="contactId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+          <Property Name="mobile" Type="Int32" Nullable="false" />
+          <Property Name="subject" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -684,6 +706,17 @@
                 <ScalarProperty Name="password" ColumnName="password" />
                 <ScalarProperty Name="username" ColumnName="username" />
                 <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="contacts">
+            <EntityTypeMapping TypeName="BIT4thSemModel.contact">
+              <MappingFragment StoreEntitySet="contact">
+                <ScalarProperty Name="subject" ColumnName="subject" />
+                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="contactId" ColumnName="contactId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

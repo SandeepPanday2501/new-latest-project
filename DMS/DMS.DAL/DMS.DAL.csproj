@@ -137,6 +137,9 @@
     <Compile Include="DatabaseContext\cfg01configurations.cs">
       <DependentUpon>MainModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseContext\contact.cs">
+      <DependentUpon>MainModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseContext\DataContext.cs" />
     <Compile Include="DatabaseContext\dep01department.cs">
       <DependentUpon>MainModel.tt</DependentUpon>
@@ -223,6 +226,10 @@
     <Compile Include="Migrations\202205301237333_usersignup.cs" />
     <Compile Include="Migrations\202205301237333_usersignup.designer.cs">
       <DependentUpon>202205301237333_usersignup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207131023552_msg.cs" />
+    <Compile Include="Migrations\202207131023552_msg.designer.cs">
+      <DependentUpon>202207131023552_msg.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -318,6 +325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205301237333_usersignup.resx">
       <DependentUpon>202205301237333_usersignup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207131023552_msg.resx">
+      <DependentUpon>202207131023552_msg.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -20,6 +20,7 @@
         <AssociationConnector Association="BIT4thSemModel.FK_emp01employee_lvl01employee_levels" />
         <AssociationConnector Association="BIT4thSemModel.FK_usr05users_emp01employee" />
         <EntityTypeShape EntityType="BIT4thSemModel.user_SignUp" Width="1.5" PointX="8.375" PointY="6.75" />
+        <EntityTypeShape EntityType="BIT4thSemModel.contact" Width="1.5" PointX="7.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

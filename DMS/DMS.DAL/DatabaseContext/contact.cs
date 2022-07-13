@@ -11,20 +11,13 @@ namespace DMS.DAL.DatabaseContext
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
-    public partial class user_SignUp
+    
+    public partial class contact
     {
-        
-        public int id { get; set; }
-        [Required(ErrorMessage = "This field is required!!!")]
-        public string username { get; set; }
-
-        [Required(ErrorMessage = "This field is required!!!")]
-        public string password { get; set; }
-        [Compare("password",ErrorMessage ="Passord must be same!!!")]
-        public string confirmpassword { get; set; }
-
-        public string loginerrorMessage { get; set; }
+        public int contactId { get; set; }
+        public string name { get; set; }
+        public string Email { get; set; }
+        public int mobile { get; set; }
+        public string subject { get; set; }
     }
 }

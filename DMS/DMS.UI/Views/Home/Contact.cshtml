@@ -27,22 +27,22 @@
         <div class="col span_2_of_3">
             <div class="contact-form">
                 <h2>Contact Us</h2>
-                <form>
+                <form action="@Url.Action("contactus","Home")" method="post">
                     <div>
                         <span><label>NAME</label></span>
-                        <span><input type="text" value="" /></span>
+                        <span><input name="name" type="text" value="" /></span>
                     </div>
                     <div>
                         <span><label>E-MAIL</label></span>
-                        <span><input type="text" value="" /></span>
+                        <span><input name="Email" type="text" value="" /></span>
                     </div>
                     <div>
                         <span><label>MOBILE</label></span>
-                        <span><input type="text" value="" /></span>
+                        <span><input name="mobile" type="text" value="" /></span>
                     </div>
                     <div>
                         <span><label>SUBJECT</label></span>
-                        <span><textarea> </textarea></span>
+                        <span><textarea name="subject"> </textarea></span>
                     </div>
                     <div>
                         <span><input type="submit" value="Submit"></span>
