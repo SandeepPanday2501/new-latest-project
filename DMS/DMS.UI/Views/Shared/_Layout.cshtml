@@ -1,0 +1,115 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>The Free Extro-Electronics Website Template | Home :: w3layouts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="~/Content/NewFolder1/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--slider-->
+    <script src="~/Content/NewFolder1/js/modernizr.js"></script>
+    <!-- jQuery -->
+    <script src="~/Content/NewFolder1/js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+    <!-- FlexSlider -->
+    <script defer src="~/Content/NewFolder1/js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            SyntaxHighlighter.all();
+        });
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <a href="@Url.Action("Index","Home")"><img src="~/Content/NewFolder1/images/kass.png" alt="" title="logo" class="kass" /></a>
+        </div>
+        <div class="nav-right">
+            <ul class="nav">
+                <li class="active"><a href="@Url.Action("Ghar","Home")">Home</a></li>
+                <li><a href="@Url.Action("Search","Home")">About</a></li>
+                <li><a href="@Url.Action("service","Home")">Service</a></li>
+                <li><a href="@Url.Action("contact","Home")">Contact</a></li>
+             
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="menu-bg">
+        <ul class="menu">
+            <li><a href="@Url.Action("Homeappliance","Home")">Home Appliances</a></li>
+            <li>
+                <a href="@Url.Action("accessories","Home")">Accessories</a>
+                <ul>
+                    <li><a href="accessories.html">Tablet</a></li>
+                    <li><a href="accessories.html">Camera</a></li>
+                    <li><a href="accessories.html">Peripherals</a></li>
+                </ul>
+            </li>
+            <li><a href="@Url.Action("computing","Home")">Computing</a></li>
+          
+        </ul>
+        <div class="search">
+            <form>
+                <input type="text" value="">
+                <input type="submit" value="">
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    @RenderBody();
+    <div class="footer">
+        <div class="section group">
+            <div class="col_1_of_4 span_1_of_4">
+                <h2>My Account</h2>
+                <ul class="nav1">
+                    <li><a href="">Always free from repetition</a></li>
+                    <li><a href="">Morbi blandit turpis ewuhre</a></li>
+                    <li><a href="">Integer id ante nec elit mo</a></li>
+                    <li><a href="">Maecenas accumsan lorem sed</a></li>
+                </ul>
+            </div>
+            <div class="col_1_of_4 span_1_of_4">
+                <h2>Information</h2>
+                <ul class="nav1">
+                    <li><a href="">Always free from repetition</a></li>
+                    <li><a href="">Morbi blandit turpis ewuhre</a></li>
+                    <li><a href="">Integer id ante nec elit mo</a></li>
+                    <li><a href="">Maecenas accumsan lorem sed</a></li>
+                </ul>
+            </div>
+            <div class="col_1_of_4 span_1_of_4">
+                <h2>Follow Us</h2>
+                <ul class="nav">
+                    <li><a href=""><img src="~/Content/NewFolder1/images/facebook.png" title="facebook" alt="" /></a></li>
+                    <li><a href=""><img src="~/Content/NewFolder1/images/twitter.png" title="twitter" alt="" /></a></li>
+                    <li><a href=""><img src="~/Content/NewFolder1/images/rss.png" title="rss" alt="" /></a></li>
+                </ul>
+            </div>
+            <div class="col_1_of_4 span_1_of_4">
+                <h2>Contact Us</h2>
+                <ul class="nav">
+                    <li><a href=""> 500 Lorem Ipsum Dolor Sit,</a></li>
+                    <li><a href="">22-56-2-9 Sit Amet, Lorem,</a></li>
+                    <li><a href="">USA </a></li>
+                    <li><a href="">Phone:(00) 222 666 444 </a></li>
+                    <li><a href="mailto:info@example.com">Email: <a href="mailto:info@example.com"><span>info@mycompany.com</span></a></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer1">
+        <p class="w3-link">© 2013 Extro-Electronics. All Rights Reserved | Desig by <a href="http://w3layouts.com/" target="_blank"> W3Layouts</a></p>
+    </div>
+    </div>
+</body>
+</html>

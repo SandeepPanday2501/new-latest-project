@@ -1,0 +1,27 @@
+﻿@model DMS.DAL.DatabaseContext.user_SignUp
+@{
+    ViewBag.Title = "usersign";
+    Layout = null;
+}
+<style>
+    .field-validation-error {
+        color: red;
+    }
+</style>
+<h2>User SignUp</h2>
+<form action="@Url.Action("SaveData","UsrSignUp")" method="post">
+    <label>Username</label>
+    <input type="text" name="username" value="" autocomplete="off" /><br />
+    <label>@Html.ValidationMessageFor(x => x.username)</label><br />
+    <label>Password</label>
+    <input type="password" name="password" value="" autocomplete="off" /><br />
+    <label>@Html.ValidationMessageFor(x => x.password)`</label><br />
+    <label>Confirm Password</label>
+    <input type="password" name="confirmpassword" value="" autocomplete="off" /><br /><br />
+    <label>@Html.ValidationMessageFor(x => x.confirmpassword)</label><br />
+
+    <input type="submit" name="submit" value="submit" />
+</form>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/jquery-1.11.0.min.js"></script>

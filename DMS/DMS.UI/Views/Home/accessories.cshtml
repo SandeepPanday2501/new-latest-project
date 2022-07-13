@@ -1,0 +1,168 @@
+﻿@{
+    if (Session["username"] == null)
+    {
+        Response.Redirect("~/usrlogin/userindex");
+    }
+}
+
+<div class="content">
+    <div class="section group">
+        <div class="cont span_2_of_3">
+            <div class="single">
+                <h2><a href="index.html">Home&nbsp;></a></h2>
+                <div class="clear"></div>
+                <div class="text-h">
+                    <p class="left">Accessories</p>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="text-h1 top">
+                <h2>Different products in the same category</h2>
+            </div>
+            <p class="left sort">Sort by:</p>
+            <div class="drp-dwn">
+                <select onchange="window.location=this.options[this.selectedIndex].value">
+                    <option value="">-</option>
+                    <option value="">eiusmod</option>
+                    <option value="">eiusmod</option>
+                    <option value="">eiusmod</option>
+                    <option value="">eiusmod</option>
+                </select>
+            </div>
+            <div class="section group">
+                <div class="col_1_of_5 span_1_of_5">
+                    <div class="grid-img" style="width:90%; height:155px;">
+                        <img src="~/Content/NewFolder1/images/ear.jpg" alt="" style="width:100%; height:60%;" /></a>
+                    </div>
+                    <p>MI Earphones</p>
+                    <button class="left" style="background-color:powderblue;">Rs. 2000</button>
+                    <div class="btn right"><a href="@Url.Action("details","Home")">view</a></div>
+                </div>
+                <div class="col_1_of_5 span_1_of_5">
+                    <div class="grid-img" style="width:90%; height:155px;">
+                        <img src="~/Content/NewFolder1/images/earr.jpg" alt="" style="width:100%; height:90%;" /></a>
+                    </div>
+                    <p>Earbuds</p>
+                    <button class="left" style="background-color:powderblue;">Rs.3000</button>
+                    <div class="btn right"><a href="details.html">view</a></div>
+                </div>
+                <div class="col_1_of_5 span_1_of_5">
+                    <div class="grid-img" style="width:90%; height:155px;">
+                        <img src="~/Content/NewFolder1/images/gwatch.jpg" alt="" style="width:100%; height:99%;" /></a>
+                    </div>
+                    <p>G-Shock Watch</p>
+                    <button class="left" style="background-color:powderblue;">Rs. 4,000</button>
+                    <div class="btn right"><a href="details.html">view</a></div>
+                </div>
+                <div class="col_1_of_5 span_1_of_5">
+                    <div class="grid-img" style="width:90%; height:155px;">
+                        <img src="~/Content/NewFolder1/images/swatch.jpg" alt="" style="width:100%; height:90%;" /></a>
+                    </div>
+                    <p>Smart Watch</p>
+                    <button class="left" style="background-color:powderblue;">Rs. 10,000</button>
+                    <div class="btn right"><a href="details.html">view</a></div>
+                </div>
+
+            </div>
+            <div class="section group">
+                <div class="col_1_of_5 span_1_of_5">
+                    <div class="grid-img" style="width:90%; height:155px;">
+                        <img src="~/Content/NewFolder1/images/mic.jpg" alt="" style="width:100%; height:92%;" /></a>
+                    </div>
+                    <p>Mic and Stand</p>
+                    <button class="left" style="background-color:powderblue;">Rs. 5,500</button>
+                    <div class="btn right"><a href="details.html">view</a></div>
+                </div>
+                <div class="col_1_of_5 span_1_of_5">
+                    <div class="grid-img" style="width:90%; height:155px;">
+                        <img src="~/Content/NewFolder1/images/charger.jpg" alt="" style="width:100%; height:60%;" /></a>
+                    </div>
+                    <p>Charging Cube</p>
+                    <button class="left" style="background-color:powderblue;">Rs. 1,500</button>
+                    <div class="btn right"><a href="details.html">view</a></div>
+                </div>
+                <div class="col_1_of_5 span_1_of_5">
+                    <div class="grid-img" style="width:90%; height:155px;">
+                        <img src="~/Content/NewFolder1/images/router.jpg" alt="" style="width:100%; height:60%;" /></a>
+                    </div>
+                    <p>MI router</p>
+                    <button class="left" style="background-color:powderblue;">Rs. 1,500</button>
+                    <div class="btn right"><a href="details.html">view</a></div>
+                </div>
+                <div class="col_1_of_5 span_1_of_5">
+                    <div class="grid-img" style="width:90%; height:155px;">
+                        s<img src="~/Content/NewFolder1/images/head.jpg" alt="" style="width:100%; height:90%;" /></a>
+                    </div>
+                    <p>Headphones</p>
+                    <button class="left" style="background-color:powderblue;">Rs. 2,500</button>
+                    <div class="btn right"><a href="details.html">view</a></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="rsidebar span_1_of_3">
+            <div class="sidebar">
+                <h2>Cart</h2>
+                <p class="left">No Products</p>
+                <button class="right">-</button>
+                <div class="clear"></div>
+                <p class="left">Shipping</p>
+                <button class="right">$32.58</button>
+                <div class="clear"></div>
+                <p class="left">Export</p>
+                <button class="right">$45.23</button>
+                <div class="clear"></div>
+                <p class="left">Import</p>
+                <button class="right">$23.58</button>
+                <div class="clear"></div>
+                <p class="left">Total</p>
+                <button class="right">$100.420</button>
+                <div class="clear"></div>
+                <div class="btn top"><a href="details.html">Add to Cart</a></div>
+            </div>
+            <div class="clear"></div>
+            <div class="sidebar">
+                <h2>Categories</h2>
+                <ul class="nav1">
+                    <li><a href="">Lorem ipsum dolor sit amet,Lorem Ipsum is simply dummy</a></li>
+                    <li><a href="">Aliquam tincidunt mauris eu risus,Lorem Ipsum is simply</a></li>
+                    <li><a href="">Vestibulum auctor dapibus neque,Lorem Ipsum is simply</a></li>
+                    <li><a href="">Lorem ipsum dolor sit amet,,Lorem Ipsum is simply dummy</a></li>
+                    <li><a href="">Aliquam tincidunt mauris eu risus,Lorem Ipsum is simply</a></li>
+                    <li><a href="">Vestibulum auctor dapibus neque,Lorem Ipsum is simply</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="sidebar">
+                <h2>Top Sellers</h2>
+                <div class="listview_1_of_2 images_1_of_2">
+                    <div class="listimg listimg_2_of_1">
+                        <a href="details.html"><img src="~/Content/NewFolder1/images/ear.jpg" alt="" /></a>
+                    </div>
+                    <div class="text list_2_of_1">
+                        <p>Get the best earphones here for best experince.</p>
+                    </div>
+                </div>
+                <div class="listview_1_of_2 images_1_of_2">
+                    <div class="listimg listimg_2_of_1">
+                        <a href="details.html"><img src="~/Content/NewFolder1/images/head.jpg" alt="" /></a>
+                    </div>
+                    <div class="text list_2_of_1">
+                        <p>Best gaming headphones available.</p>
+                    </div>
+                </div>
+                <div class="listview_1_of_2 images_1_of_2">
+                    <div class="listimg listimg_2_of_1">
+                        <a href="details.html"><img src="~/Content/NewFolder1/images/earr.jpg" alt="" /></a>
+                    </div>
+                    <div class="text list_2_of_1">
+                        <p>Restocked earbuds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
