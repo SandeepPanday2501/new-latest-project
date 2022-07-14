@@ -27,7 +27,7 @@ namespace DMS.Controllers
             else
             {
                 Session["username"] = userdetails.username;
-                return RedirectToAction("Ghar","Home");
+                return RedirectToAction("Homeappliance","Home");
             }
            
         }
