@@ -1,4 +1,9 @@
-﻿@{
+﻿
+@{
+    ViewBag.Title = "tost";
+}
+
+@{
     if (Session["username"] == null)
     {
         Response.Redirect("~/usrlogin/userindex");
@@ -10,18 +15,18 @@
             <div class="single">
                 <h2><a href="index.html"></a></h2>
                 <div class="grid-img" style="width:50%; height:200px;">
-                    <img src="~/Content/NewFolder1/images/ion.jpg" alt="" style="width:50%; height:90%;" /></a>
+                    <img src="~/Content/NewFolder1/images/toster.jpg" alt="" style="width:50%; height:90%;" /></a>
                 </div>
                 <div class="para">
-                    <h4>Iron</h4>
+                    <h4>Toaster</h4>
                     <div class="cart-b">
-                        <button class="left" style="background-color:powderblue;">Rs. 2,000</button>
+                        <button class="left" style="background-color:powderblue;">Rs. 1,600</button>
 
                         <div class="btn right"><a href="details.html">Add to Cart</a></div>
                         <div class="clear"></div>
                     </div>
                     <h5>100 items in stock</h5>
-                    <p>Get all your dressed pressed now.</p>
+                    <p>Get your toasts toasted now.</p>
                     <div class="btn top"></div>
                 </div>
                 <div class="clear"></div>
@@ -90,7 +95,6 @@
     </div>
 </div>
 </div>
-
 
 
 

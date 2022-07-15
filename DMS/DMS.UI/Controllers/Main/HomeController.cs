@@ -56,6 +56,100 @@ namespace DMS.Controllers
             return View();
         }
 
+        public ActionResult fan()
+        {
+
+            return View();
+        }
+        public ActionResult mixer()
+        {
+            return View();
+        }
+        public ActionResult wash()
+        {
+            return View();
+        }
+        public ActionResult tv()
+        {
+            return View();
+        }
+        public ActionResult coffee()
+        {
+            return View();
+        }
+        public ActionResult oven()
+        {
+            return View();
+        }
+        public ActionResult tost()
+        {
+            return View();
+        }
+        public ActionResult ear()
+        {
+            return View();
+        }
+        public ActionResult bud()
+        {
+            return View();
+        }
+        public ActionResult gwatch()
+        {
+            return View();
+        }
+        public ActionResult swatch()
+        {
+            return View();
+        }
+        public ActionResult mic()
+        {
+            return View();
+        }
+        public ActionResult charger()
+        {
+            return View();
+        }
+        public ActionResult router()
+        {
+            return View();
+        }
+        public ActionResult head()
+        {
+            return View();
+        }
+        public ActionResult cpu()
+        {
+            return View();
+        }
+        public ActionResult card()
+        {
+            return View();
+        }
+        public ActionResult key()
+        {
+            return View();
+        }
+        public ActionResult ssd()
+        {
+            return View();
+        }
+       
+        public ActionResult mouse()
+        {
+            return View();
+        }
+        public ActionResult monitor()
+        {
+            return View();
+        }
+        public ActionResult ram()
+        {
+            return View();
+        }
+        public ActionResult casee()
+        {
+            return View();
+        }
         public ActionResult Contact()
         {
             

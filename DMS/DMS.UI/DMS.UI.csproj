@@ -1544,6 +1544,29 @@
     <Content Include="Views\Admin\upgrade.cshtml" />
     <Content Include="Views\usrlogin\userindex.cshtml" />
     <Content Include="Views\UsrSignUp\usersign.cshtml" />
+    <Content Include="Views\Home\fan.cshtml" />
+    <Content Include="Views\Home\mixer.cshtml" />
+    <Content Include="Views\Home\wash.cshtml" />
+    <Content Include="Views\Home\tv.cshtml" />
+    <Content Include="Views\Home\coffee.cshtml" />
+    <Content Include="Views\Home\tost.cshtml" />
+    <Content Include="Views\Home\oven.cshtml" />
+    <Content Include="Views\Home\ear.cshtml" />
+    <Content Include="Views\Home\bud.cshtml" />
+    <Content Include="Views\Home\gwatch.cshtml" />
+    <Content Include="Views\Home\swatch.cshtml" />
+    <Content Include="Views\Home\mic.cshtml" />
+    <Content Include="Views\Home\charger.cshtml" />
+    <Content Include="Views\Home\router.cshtml" />
+    <Content Include="Views\Home\head.cshtml" />
+    <Content Include="Views\Home\cpu.cshtml" />
+    <Content Include="Views\Home\card.cshtml" />
+    <Content Include="Views\Home\key.cshtml" />
+    <Content Include="Views\Home\ssd.cshtml" />
+    <Content Include="Views\Home\mouse.cshtml" />
+    <Content Include="Views\Home\monitor.cshtml" />
+    <Content Include="Views\Home\ram.cshtml" />
+    <Content Include="Views\Home\casee.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
